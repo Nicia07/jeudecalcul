@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'utilisateur</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculage.js" defer></script>
+</head>
+<body>
+
+    
+    <h1>Formulaire d'Inscription</h1>
+    <form>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" required><br><br>
+
+        <label>Situation :</label><br>
+        <input type="radio" id="etudiant" name="situation" value="Étudiant" required>
+        <label for="etudiant">Étudiant</label><br>
+        <input type="radio" id="salarie" name="situation" value="Salarié">
+        <label for="salarie">Salarié</label><br><br>
+
+        <label for="anneenaissance">Année de naissance :</label>
+        <input type="number" id="anneenaissance" required><br><br>
+
+        <button id="buttonVoirMonAge">Voir mon âge</button> 
+    </form>
+    <p><span id="messageAge"></span></p>
+</body>
+</html>

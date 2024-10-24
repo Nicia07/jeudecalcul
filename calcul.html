@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <script src="evenement.js" defer></script>
+    <link rel="stylesheet" href="calcul.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <header>
+           <h1>Jeu de calcul automatique de l'age</h1>
+           <h2>L'application le plus fiable pour connaitre votre age</h2>
+           <h3>Vous serez heureux d'apprendre votre age</h3>
+        </header>
+
+        <main>
+            <div class="personne">
+              <p>Veuillez saisir votre nom et prénom</p>
+              <div class="identite">
+                <label for="Nom">Nom :</label>
+                <input type="text" id="nom" name="nom">
+                <label for="Prenom">Prenom :</label>
+                <input type="text" id="prenom" name="prenom">
+              </div>
+        </div>
+        <br>
+       
+            <div class="Situation">
+                <p>Veuillez sélectionner votre situation</p>
+                <label>Etudiant(e)</label>
+                <input type="radio" id="etudiant" name="situation" value="etudiant">
+                <label>Salarié(e)</label>
+                <input type="radio" id="salarie" name="situation" value="salarie">
+            </div>
+        
+            <div class="annee-naissance">
+                <label for="annee">Veuillez saisir votre année de naissance :</label>
+                <input type="number" id="anneenaissance" name="annee" min="1900" max="2024">
+            </div>
+            <br>
+       
+            <div class="messageAffiche">
+                <p id="affichageAge">Votre âge sera affiché ici.</p>
+                <p id="messageSalutation">Votre âge sera affiché ici.</p>
+              
+            </div>
+            <button id="buttonValider">Voir mon âge</button> 
+        
+
+    </main>
+    <footer>
+        <p>Le site est développé par Nicia dans le cadre de la formation Développeur Web et Web Mobile organisée par Ndovoo et
+            <a href="https://www.intercariforef.org/carif-oref/carif-oref-mayotte" target="_blank">CARIF-OREF 976.</a>
+        </p>
+        <p>Tous droits réservés 2024.</p>
+    </footer>
+
+</body>
+</html>
