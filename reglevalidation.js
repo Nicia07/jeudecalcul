@@ -2,27 +2,36 @@
 
 // Vérifier que le champ "Nom" est bien complété
 
-const elementFormulaire = document.querySelector("form");
-console.log(elementFormulaire);
 
-// J'ajoute un écouteur d'événement sur le formulaire. Pourquoi? Pour écouter l'événement submit
-elementFormulaire.addEventListener("submit", (event) => {
-    /* on empêche le comportement par défaut de l'événement submit
-        event.preventDefault(); permet d'éviter un rechargement la page
+const elementFormulair = document.querySelector("form");
+console.log(elementFormulair);
+// ajoute un écouteur d'événement sur le formulaire. pourquoi? pour écouter l'événement submit
+elementFormulair.addEventListener("submit", (event) => {
+    /* On empêche le comportement par défaut de l'événement submit
+       event.preventDefault(); permet d'éviter un rechargement la page
     */
-     
     event.preventDefault();
 
-    //Récupère l'élément qui contient le nom
-    const elementInputNom = document.querySelector("#nom");
-    const valueNom = elementInputNom.value;
+   // Récupère l'élement qui contient le nom
+   const elementInputNom = document.querySelector("#nom");
+   const valueNom = elementInputNom.value;
 
     // Vérifier la valeur du champ "nom"
-    if(valueNom === "") {
+    if (valueNom === "") {
         console.log("le Champ nom est vide.");
     } else {
-        console.log("le champ nom est rempli.");
+    console.log(" Nom est rempli.");
     }
-
-    // Objectif: Vérifier que la valeur du champ "Prenom" n'est pas vide
-});
+ 
+    
+    const elementInputPrenom = document.querySelector("#prenom");
+    const valuePrenom = elementInputPrenom.value;
+    
+ 
+    if(valuePrenom === "") {
+       console.log("le Champ prenom est vide.");
+    } else {
+     console.log(" Prenom est rempli.");
+    }
+ 
+ });

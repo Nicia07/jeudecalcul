@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <script src="evenement.js" defer></script>
+        <script src="script.js" defer></script>
+        <!--<script src="evenement.js" defer></script>-->
+        <!--<script src="reglevalidation.js" defer></script>-->
+        <script src="maclasse.js"defer></script>
+        <!--<script src="Exercice.js"defer></script>-->
+
     <link rel="stylesheet" href="calcul.css">
     <title>Document</title>
 </head>
@@ -17,6 +21,7 @@
         </header>
 
         <main>
+            <form>
             <div class="personne">
               <p>Veuillez saisir votre nom et prénom</p>
               <div class="identite">
@@ -43,13 +48,13 @@
             <br>
        
             <div class="messageAffiche">
-                <p id="affichageAge">Votre âge sera affiché ici.</p>
-                <p id="messageSalutation">Votre âge sera affiché ici.</p>
+                <p<span id="affichageAge"></span></p>
+                <p><span id="messageSalutation"></span></p>
               
             </div>
             <button id="buttonValider">Voir mon âge</button> 
         
-
+        </form>
     </main>
     <footer>
         <p>Le site est développé par Nicia dans le cadre de la formation Développeur Web et Web Mobile organisée par Ndovoo et

@@ -29,9 +29,9 @@ function afficheJournee(heure){
     if(heure < 12 ){
         return "Bonjour";
     }
-    return "Bonsoir";// Monsieur tsi bloqué haa tsi sama D'accord Oui yes 
+    return "Bonsoir"; 
 }
-
+ 
 
 
 console.log("année en cours :", date.getFullYear());//Récuperer l'annee au format YYYY
