@@ -1,7 +1,7 @@
 // La notion de classe en Javascript
 
 // La synthaxe de classe 
-//On veut vor de quoi est composée une classe.
+//On veut voir de quoi est composée une classe.
 
 class MyClass{
     //Les methodes de ma classe MyClasse
@@ -15,9 +15,7 @@ class MyClass{
         constructor(nomUtilisateur){// mon contructeur
             this.nom = nomUtilisateur;
         }
-        welcom(){// Méthode
-            alert("welcom" + this.nom);
-        }
+      
 
         getheure(){
             const date = new Date()
@@ -32,7 +30,7 @@ class MyClass{
         }
 
     //Implémenter ma classe utilisateur en créeant on Objet appartenant à la classe utilisateur 
-    let utilisateur = new Utilisateur("Dominique");
+    let utilisateur = new Utilisateur("Hamidoou");
 
 /*
 lorsque new Utilisateur("Dominique")est appelé :

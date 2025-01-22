@@ -2,7 +2,7 @@ function calculAge(anneenaissance, anneeEncours) {
     let age = anneeEncours - anneenaissance;
     console.log("calculerAge :", age + "ans");
     return age;
-}
+} 
 
 let elementNom = document.querySelector("#nom");
 let elementPrenom = document.querySelector("#prenom");
